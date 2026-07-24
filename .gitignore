@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Large unused source videos (not referenced by the site)
+assets/video/istories-reggie.mp4
+assets/video/glenlivet-launch.mp4
+assets/video/istories-preview.m4v
