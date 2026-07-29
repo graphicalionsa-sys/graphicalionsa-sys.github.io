@@ -31,8 +31,10 @@
       : '';
     a.innerHTML =
       '<span class="wp-card-media">' + media + '</span>' +
-      '<span class="wp-card-title">' + d.title + '</span>' +
-      '<span class="wp-card-cat">' + (d.tags || '') + '</span>';
+      '<span class="wp-card-caption">' +
+        '<span class="wp-card-title">' + d.title + '</span>' +
+        '<span class="wp-card-cat">' + (d.tags || '') + '</span>' +
+      '</span>';
     track.appendChild(a);
     return a;
   });
