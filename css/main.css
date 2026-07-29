@@ -1359,6 +1359,7 @@ body.menu-open .sound-toggle { opacity: 0; pointer-events: none; }
   width: min(74vw, 1240px);
   transform: translate(-50%, -50%);
   text-align: center;
+  text-decoration: none;
   cursor: pointer;   /* the whole card opens the case study */
   will-change: transform, opacity;
 }
@@ -1389,12 +1390,12 @@ body.menu-open .sound-toggle { opacity: 0; pointer-events: none; }
 }
 .wp-card-title {
   display: block;
-  font-family: var(--font-display);
-  font-weight: 700;
+  font-family: var(--font-body);
+  font-weight: 600;
   text-transform: uppercase;
-  font-size: clamp(18px, 2vw, 32px);
-  line-height: 1.05;
-  letter-spacing: .005em;
+  font-size: clamp(18px, 2vw, 30px);
+  line-height: 1.1;
+  letter-spacing: .02em;
   color: var(--paper);
 }
 .wp-card-cat {
