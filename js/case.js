@@ -12,7 +12,7 @@
   var nextSlug = order[(idx + 1) % order.length];
   var next = window.CASES[nextSlug];
 
-  document.title = data.title + ' — Keabetsoe Tau';
+  document.title = data.title + ' | KEATAU Creative';
   document.body.classList.toggle('case--nsp-editorial', data.layout === 'nsp-editorial');
   document.body.classList.toggle('case--wpo-editorial', data.layout === 'wpo-editorial');
   document.body.classList.toggle('case--mobsie-editorial', data.layout === 'mobsie-editorial');
