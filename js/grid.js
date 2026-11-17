@@ -1,5 +1,5 @@
 /* ============================================================
-   KEATAU CREATIVE  -  work grid, hero marquee, showreel, filters
+   KEATAU CREATIVE  -  hero columns, work grid, showreel, filters
    Data comes from js/case-data.js (window.CASES / window.CASE_ORDER)
    ============================================================ */
 (function () {
@@ -30,9 +30,28 @@
     glenlivet: 'assets/video/glenlivet-preview.m4v',
     liveeasy: 'assets/video/liveeasy/website-revamp.mp4'
   };
+  /* hero tiles: [slug, image] in three columns */
+  var C = 'assets/img/case/';
+  var TILES = [
+    [['istories', C + 'istories-editorial/banner-victoria.webp'], ['glenlivet', C + 'glenlivet-live/card-hero.webp'], ['mobsie', C + 'mobsie-editorial/key-visual-princess.webp'], ['sanbi', C + 'sanbi/01.webp'], ['nsp', C + 'nsp-editorial/hero-billboard.avif'], ['sci-bono', C + 'sci-bono/01.webp']],
+    [['shopx', C + 'shopx/hero-banner.webp'], ['liveeasy', C + 'liveeasy-editorial/kv-hustle.webp'], ['istories', C + 'istories-editorial/still-reggie.webp'], ['ifas', C + 'ifas/01.webp'], ['gwf', C + 'gwf/01.webp'], ['glenlivet', C + 'glenlivet-live/export-founders.webp']],
+    [['pnp-school-club', C + 'pnp-school-club/card-hero.webp'], ['wpo', C + 'wpo-editorial/reaching-farther.webp'], ['ultramel', C + 'ultramel-pitch/kv-r1.webp'], ['mobsie', C + 'mobsie-editorial/car-branding.webp'], ['liveeasy', C + 'liveeasy-editorial/hero.webp'], ['shopx', C + 'shopx/kv-b2b.webp']]
+  ];
 
   function shortClient(c) { return (c || '').split('·')[0].trim(); }
-  function tagList(t) { return (t || '').split('·').map(function (s) { return s.trim(); }).filter(Boolean).slice(0, 3).join('  ·  '); }
+  function tagList(t) { return (t || '').split('·').map(function (s) { return s.trim(); }).filter(Boolean).slice(0, 2).join(', '); }
+
+  /* hero columns */
+  document.querySelectorAll('[data-k-cols]').forEach(function (el) {
+    el.innerHTML = TILES.map(function (col, ci) {
+      var tiles = col.map(function (t, i) {
+        var d = cases[t[0]] || {};
+        return '<a class="k-tile" href="case.html?p=' + t[0] + '" data-page-link><img src="' + t[1] + '" alt="' + (d.title || '') + '" loading="' + (i < 3 ? 'eager' : 'lazy') + '"><span>' + shortClient(d.client) + '</span></a>';
+      }).join('');
+      var dur = [64, 76, 58][ci] + 's';
+      return '<div class="k-col' + (ci === 1 ? ' k-col--down' : '') + '" style="--dur:' + dur + '">' + tiles + tiles + '</div>';
+    }).join('');
+  });
 
   function card(slug, i, wideFirst) {
     var d = cases[slug]; if (!d) return '';
@@ -41,7 +60,7 @@
     return '<a class="k-card' + (wide ? ' k-card--wide' : '') + '" href="case.html?p=' + slug + '" data-page-link data-slug="' + slug + '" data-cats="' + (CAT[slug] || []).join('|') + '" data-reveal>' +
       '<span class="k-card-media"><img src="' + d.heroImg + '" alt="' + d.title.replace(/"/g, '&quot;') + '" loading="' + (i < 2 ? 'eager' : 'lazy') + '">' + vid +
       '<span class="k-card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>' +
-      '<span class="k-card-body"><span class="k-card-client">' + shortClient(d.client) + '</span><span class="k-card-title">' + d.title + '</span><span class="k-card-tags">' + tagList(d.tags) + '</span></span></a>';
+      '<span class="k-card-body"><span class="k-card-title">' + shortClient(d.client) + '</span><span class="k-card-tags">' + tagList(d.tags) + '</span></span></a>';
   }
 
   /* grids: [data-k-grid="all|home"] */
@@ -54,14 +73,6 @@
       c.addEventListener('mouseenter', function () { v.play().catch(function () {}); });
       c.addEventListener('mouseleave', function () { v.pause(); });
     });
-  });
-
-  /* hero marquee */
-  document.querySelectorAll('[data-k-marquee]').forEach(function (el) {
-    var tiles = order.map(function (s) {
-      var d = cases[s]; return '<a class="k-marquee-tile" href="case.html?p=' + s + '" data-page-link><img src="' + d.heroImg + '" alt="" loading="lazy"><span>' + shortClient(d.client) + '</span></a>';
-    }).join('');
-    el.innerHTML = '<div class="k-marquee-track">' + tiles + tiles + '</div>';
   });
 
   /* filters */
@@ -80,20 +91,30 @@
     });
   }
 
-  /* showreel */
+  /* showreel: plays muted when it scrolls into view, sound on tap */
   var reel = document.querySelector('[data-k-reel]');
   if (reel) {
     var v = reel.querySelector('video');
-    var mute = document.querySelector('[data-k-mute]');
-    reel.addEventListener('click', function () {
-      if (v.paused) { v.play(); reel.classList.add('is-playing'); } else { v.pause(); reel.classList.remove('is-playing'); }
+    var sound = reel.querySelector('[data-k-sound]');
+    function setSound(on) {
+      v.muted = !on;
+      if (sound) { sound.classList.toggle('is-on', on); sound.querySelector('span').textContent = on ? 'Sound on' : 'Sound off'; }
+    }
+    function play() { v.play().then(function () { reel.classList.add('is-playing'); }).catch(function () {}); }
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) { if (en.isIntersecting) play(); else v.pause(); });
+      }, { threshold: 0.35 }).observe(reel);
+    } else { play(); }
+    reel.addEventListener('click', function (e) {
+      if (e.target.closest('[data-k-sound]')) return;
+      if (v.paused) play(); else setSound(v.muted);
     });
-    v.addEventListener('ended', function () { reel.classList.remove('is-playing'); v.currentTime = 0; });
-    if (mute) mute.addEventListener('click', function () { v.muted = !v.muted; mute.textContent = v.muted ? 'Sound off' : 'Sound on'; });
+    if (sound) sound.addEventListener('click', function () { setSound(v.muted); if (v.paused) play(); });
   }
 
   /* reveal injected nodes (main.js only observes what existed at boot) */
-  var nodes = document.querySelectorAll('[data-k-grid] [data-reveal], [data-k-marquee] [data-reveal]');
+  var nodes = document.querySelectorAll('[data-k-grid] [data-reveal]');
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in-view'); io.unobserve(en.target); } });

@@ -366,18 +366,7 @@
 
     document.documentElement.classList.add('has-cinematic-motion');
 
-    var progress = document.createElement('span');
-    progress.className = 'scroll-progress';
-    progress.setAttribute('aria-hidden', 'true');
-    document.body.appendChild(progress);
-
     var glow = null;
-    if (finePointer) {
-      glow = document.createElement('span');
-      glow.className = 'cursor-ember';
-      glow.setAttribute('aria-hidden', 'true');
-      document.body.appendChild(glow);
-    }
 
     var specs = [
       ['.hero-media', -0.085, 72],
@@ -410,7 +399,6 @@
       ticking = false;
       var sy = window.scrollY || window.pageYOffset;
       var max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
-      progress.style.transform = 'scaleX(' + Math.min(1, sy / max).toFixed(4) + ')';
       var vh = window.innerHeight;
       depth.forEach(function (item) {
         var rect = item.el.getBoundingClientRect();
@@ -529,7 +517,6 @@
   function boot() {
     injectGlassDefs();
     initSheen();
-    initSmoothScroll();
     initLoader();
     initMenu();
     initReveals();
