@@ -1164,7 +1164,7 @@ window.CASES = {
     agency: 'Flow Communication',
     tags: 'Education · Science · Content',
     intro: 'Making science feel like an adventure. Holiday programmes and monthly content for Southern Africa\'s largest science centre, illustrated worlds included.',
-    heroImg: 'assets/img/case/sci-bono/05.webp',
+    heroImg: 'assets/img/case/sci-bono/01.webp',
     metaDescription: 'Sci-Bono Discovery Centre case study by Keabetsoe Tau: holiday programme campaigns, illustrated key art and monthly content for Southern Africa\'s largest science centre.',
     sections: [],
     editorial: {
@@ -1196,7 +1196,7 @@ window.CASES = {
           body: 'Eco-Sciences for the winter holidays, Astonishing Astronomy for spring: custom lettering, illustrated environments and photography of real young scientists composited into each world.',
           grid: [
             ['sci-bono/01.webp', 'st-w6 st-wide'], ['sci-bono/06.webp', 'st-w6 st-wide'],
-            ['sci-bono/08.webp', 'st-w7 st-wide'], ['sci-bono/05.webp', 'st-w5 st-auto']
+            ['sci-bono/08.webp', 'st-w7 st-wide'], ['sci-bono/07.webp', 'st-w5 st-auto']
           ]
         },
         {
