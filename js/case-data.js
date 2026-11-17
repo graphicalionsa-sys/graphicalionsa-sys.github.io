@@ -1195,7 +1195,6 @@ window.CASES = {
           h: 'Two seasons of wonder.',
           body: 'Eco-Sciences for the winter holidays, Astonishing Astronomy for spring: custom lettering, illustrated environments and photography of real young scientists composited into each world.',
           grid: [
-            ['sci-bono/07.webp', 'st-w12 st-wide'],
             ['sci-bono/01.webp', 'st-w6 st-wide'], ['sci-bono/06.webp', 'st-w6 st-wide'],
             ['sci-bono/08.webp', 'st-w7 st-wide'], ['sci-bono/05.webp', 'st-w5 st-auto']
           ]
