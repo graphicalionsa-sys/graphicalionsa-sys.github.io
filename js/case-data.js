@@ -1222,13 +1222,455 @@ window.CASES = {
     roleCopy: 'I created the centre\'s campaign and content creative across digital and physical screens: illustrated programme worlds, brochures and schedules, social announcements, in-centre screensavers and web banners, produced on a monthly rhythm.',
     roleTags: ['Campaign Design', 'Illustration Direction', 'Content Design', 'Education Design', 'Digital Screens']
   }
+  ,
+  codigo: {
+    layout: 'studio-editorial',
+    title: 'Código 1530: #ShareYourCódigo',
+    client: 'Código 1530 Tequila',
+    year: '2025',
+    role: 'Creative Direction · Campaign Concept',
+    agency: 'The Ad Hive Group',
+    tags: 'Brand Launch · Integrated Campaign · Experiential · Retail',
+    intro: 'A family tequila from Amatitán built on a secret worth sharing. The launch turned that secret into an invitation for Mzansi.',
+    heroImg: 'assets/img/case/codigo/01.webp',
+    metaDescription: 'Código 1530 #ShareYourCódigo launch campaign by Keabetsoe Tau: key visuals, QR teaser, secret webpage, the Secret Código Tour truck, retail POS and a bespoke home bar prize.',
+    sections: [],
+    editorial: {
+      theme: { bg: '#141110', bg2: '#1D1916', panel: '#27211C', ink: '#F6EEE4', mist: '#BBA992', accent: '#C8783A', accent2: '#E2B66B', line: 'rgba(200,120,58,.3)' },
+      hero: { kicker: 'Código 1530 · Launch pitch · 2025', titleA: 'Share Your', titleB: 'Código', tagline: 'Tequila\'s best kept secret, now in Mzansi', band: '#ShareYourCódigo · The Secret Código Tour · Tequila\'s best kept secret · Now in Mzansi ·' },
+      client: {
+        number: '01',
+        eyebrow: 'The Brief',
+        h: 'A cult tequila meeting a new country.',
+        body: [
+          'Tequila is the fastest growing celebration spirit in South Africa, and the shelf is crowded with loud brands. Código 1530 needed a launch that felt rare, personal and worth talking about.'
+        ]
+      },
+      approach: {
+        number: '02',
+        eyebrow: 'The Idea',
+        h: 'A secret is only valuable when you share it.',
+        body: [
+          'Código began as a family recipe passed between friends. The campaign makes every touchpoint a code to crack: QR teasers, a hidden webpage, invite only tastings and a touring truck that turns up where the city gathers.'
+        ],
+        quote: 'Tequila\'s best kept secret. Now in Mzansi.'
+      },
+      galleries: [
+        {
+          eyebrow: 'Key Visuals',
+          h: 'Tequila\'s best kept secret.',
+          body: '',
+          grid: [
+            ['codigo/02.webp', 'st-w4 st-auto'], ['codigo/03.webp', 'st-w4 st-auto'], ['codigo/04.webp', 'st-w4 st-auto'],
+            ['codigo/05.webp', 'st-w6 st-auto'], ['codigo/09.webp', 'st-w6 st-auto']
+          ]
+        },
+        {
+          eyebrow: 'The Teaser',
+          h: 'Scan to uncover more.',
+          body: '',
+          grid: [
+            ['codigo/06.webp', 'st-w4 st-auto'], ['codigo/07.webp', 'st-w4 st-auto'], ['codigo/08.webp', 'st-w4 st-auto'],
+            ['codigo/10.webp', 'st-w6 st-auto'], ['codigo/11.webp', 'st-w6 st-auto']
+          ]
+        },
+        {
+          eyebrow: 'The Secret Código Tour',
+          h: 'A truck that turns up where the city gathers.',
+          body: '',
+          grid: [
+            ['codigo/12.webp', 'st-w4 st-auto'], ['codigo/13.webp', 'st-w4 st-auto'], ['codigo/14.webp', 'st-w4 st-auto'],
+            ['codigo/15.webp', 'st-w6 st-auto'], ['codigo/16.webp', 'st-w6 st-auto']
+          ]
+        },
+        {
+          eyebrow: 'Retail & Reward',
+          h: 'From the shelf to a bar in your home.',
+          body: '',
+          grid: [
+            ['codigo/17.webp', 'st-w6 st-auto'], ['codigo/18.webp', 'st-w6 st-auto'],
+            ['codigo/19.webp', 'st-w4 st-auto'], ['codigo/20.webp', 'st-w4 st-auto'], ['codigo/21.webp', 'st-w4 st-auto'],
+            ['codigo/22.webp', 'st-w6 st-auto'], ['codigo/23.webp', 'st-w6 st-auto']
+          ]
+        }
+      ],
+      outcome: {
+        eyebrow: 'The Rollout',
+        h: 'Teaser, launch, sustain.',
+        body: [
+          'A three phase plan carried the secret from QR teasers and influencer drops to the truck launch, a piñata competition, retail POS and the Los Códigos secret society for loyal fans.'
+        ],
+        takeaway: 'Make people feel let in, not sold to.'
+      }
+    },
+    roleCopy: 'I led the creative direction of the pitch: the idea, the key visuals, the teaser and launch assets, the tour and retail executions and the presentation that sold it.',
+    roleTags: ['Creative Direction', 'Campaign Concept', 'Key Visuals', 'Experiential', 'Retail POS']
+  },
+  'pernod-code': {
+    layout: 'studio-editorial',
+    title: 'Pernod Ricard: Drink To Remember',
+    client: 'Pernod Ricard South Africa',
+    year: '2026',
+    role: 'Creative Direction · Campaign Concept',
+    agency: 'The Ad Hive Group',
+    tags: 'Responsible Drinking · Internal Campaign · Event · Film',
+    intro: 'A responsible drinking idea for Pernod Ricard\'s own people, built for the night of its 50th anniversary celebration.',
+    heroImg: 'assets/img/case/pernod-code/01.webp',
+    metaDescription: 'Pernod Ricard South Africa responsible drinking moderation campaign by Keabetsoe Tau: The C.O.D.E. of Conviviality, Drink To Remember.',
+    sections: [],
+    editorial: {
+      theme: { bg: '#0F1B33', bg2: '#15244A', panel: '#1B2E5C', ink: '#F3F6FF', mist: '#A9B8DB', accent: '#5EE0B4', accent2: '#F6B65A', line: 'rgba(94,224,180,.3)' },
+      hero: { kicker: 'Pernod Ricard South Africa · Pitch · 2026', titleA: 'Drink To', titleB: 'Remember', tagline: 'The C.O.D.E. of Conviviality', band: 'Chase every drink with water · Own your pace · Don\'t get pressured · Exit smart ·' },
+      client: {
+        number: '01',
+        eyebrow: 'The Brief',
+        h: 'Moderation, without killing the mood.',
+        body: [
+          'Pernod Ricard wanted employees to enjoy its internal events and still make good choices. Rules and warnings switch people off. The work had to feel like part of the party.'
+        ]
+      },
+      approach: {
+        number: '02',
+        eyebrow: 'The Idea',
+        h: 'Own the social code of drinking.',
+        body: [
+          'At work events people already follow unspoken codes. We wrote a new one. Four letters, four habits: Chase every drink with water, Own your pace, Don\'t get pressured, Exit smart. Drink to remember the night, not to forget it.'
+        ],
+        quote: 'Drink to remember.'
+      },
+      galleries: [
+        {
+          eyebrow: 'Pre Event',
+          h: 'The code is coming.',
+          body: '',
+          grid: [
+            ['pernod-code/02.webp', 'st-w12 st-auto'],
+            ['pernod-code/03.webp', 'st-w6 st-auto'], ['pernod-code/04.webp', 'st-w6 st-auto'],
+            ['pernod-code/05.webp', 'st-w6 st-auto'], ['pernod-code/06.webp', 'st-w6 st-auto']
+          ]
+        },
+        {
+          eyebrow: 'The Code',
+          h: 'Four letters. Four habits.',
+          body: '',
+          grid: [
+            ['pernod-code/07.webp', 'st-w6 st-auto'], ['pernod-code/08.webp', 'st-w6 st-auto'],
+            ['pernod-code/09.webp', 'st-w6 st-auto'], ['pernod-code/10.webp', 'st-w6 st-auto'],
+            ['pernod-code/11.webp', 'st-w4 st-auto'], ['pernod-code/12.webp', 'st-w8 st-auto']
+          ]
+        },
+        {
+          eyebrow: 'Day of Event',
+          h: 'A night built around the code.',
+          body: '',
+          grid: [
+            ['pernod-code/13.webp', 'st-w6 st-auto'], ['pernod-code/14.webp', 'st-w6 st-auto'],
+            ['pernod-code/15.webp', 'st-w6 st-auto'], ['pernod-code/16.webp', 'st-w6 st-auto'],
+            ['pernod-code/17.webp', 'st-w6 st-auto'], ['pernod-code/18.webp', 'st-w6 st-auto']
+          ]
+        },
+        {
+          eyebrow: 'Post Event',
+          h: 'Keep the code alive.',
+          body: '',
+          grid: [
+            ['pernod-code/19.webp', 'st-w6 st-auto'], ['pernod-code/20.webp', 'st-w3 st-auto'], ['pernod-code/21.webp', 'st-w3 st-auto'],
+            ['pernod-code/22.webp', 'st-w6 st-auto']
+          ]
+        }
+      ],
+      outcome: {
+        eyebrow: 'The Rollout',
+        h: 'Before, during and after.',
+        body: [
+          'Teaser films and polls before the night. Activation games, a conviviality menu and a photo booth on the night. WhatsApp follow ups and a Conviviality Passport after it, so the habit outlives the event.'
+        ],
+        takeaway: 'Change behaviour by making it the cool thing to do.'
+      }
+    },
+    roleCopy: 'I led the creative solution: the platform, the C.O.D.E. idea, the key visual treatments, the event world and the full pre, during and post event rollout.',
+    roleTags: ['Creative Direction', 'Campaign Concept', 'Key Visuals', 'Event Design', 'Internal Comms']
+  },
+  'mym-birthday': {
+    layout: 'studio-editorial',
+    title: 'McDonald\'s 30th Birthday on MyM',
+    client: 'McDonald\'s South Africa',
+    year: '2025',
+    role: 'Creative Direction · Key Visuals · CRM',
+    agency: 'The Ad Hive Group',
+    tags: 'Key Visuals · App · CRM · Paid Social',
+    intro: 'Thirty years of McDonald\'s in South Africa, celebrated where fans already are: inside the MyM app.',
+    heroImg: 'assets/img/case/mym-birthday/01.webp',
+    metaDescription: 'McDonald\'s South Africa 30th birthday MyM app campaign by Keabetsoe Tau: R30 Big Mac, 30 days of PlayStation 5 giveaways, CRM and paid social.',
+    sections: [],
+    editorial: {
+      theme: { bg: '#B5121B', bg2: '#9E0F17', panel: '#C9202A', ink: '#FFF8E7', mist: '#FFD9A0', accent: '#FFC72C', accent2: '#FFFFFF', line: 'rgba(255,199,44,.35)' },
+      hero: { kicker: 'McDonald\'s South Africa · Q4 2025', titleA: 'Everyone\'s', titleB: 'Invited', tagline: 'R30 Big Mac · 30 days · 30 PlayStation 5s', band: 'R30 Big Mac · 11 November · 11:11 · 30 days · 30 PlayStation 5s · Only on the McDonald\'s App ·' },
+      client: {
+        number: '01',
+        eyebrow: 'The Brief',
+        h: 'A birthday the whole country can join.',
+        body: [
+          'McDonald\'s turned thirty in South Africa. The celebration had to drive app downloads and orders, and feel generous enough to share.'
+        ]
+      },
+      approach: {
+        number: '02',
+        eyebrow: 'The Idea',
+        h: 'Everyone\'s invited.',
+        body: [
+          'Two drops on the app. A Big Mac for R30 on 11 November from 11:11, and a birthday meal with a PlayStation 5 to win every day for thirty days. Gold balloons, confetti and the purple Grimace hand gave it a party feel.'
+        ],
+        quote: 'Thirty years. One party. Only on the app.'
+      },
+      galleries: [
+        {
+          eyebrow: 'R30 Big Mac',
+          h: 'One day. One price.',
+          body: '',
+          grid: [
+            ['mym-birthday/02.webp', 'st-w8 st-auto'], ['mym-birthday/03.webp', 'st-w4 st-auto'],
+            ['mym-birthday/04.webp', 'st-w6 st-auto'], ['mym-birthday/05.webp', 'st-w6 st-auto']
+          ]
+        },
+        {
+          eyebrow: 'PlayStation Drop',
+          h: '30 days. 30 PlayStation 5s.',
+          body: '',
+          grid: [
+            ['mym-birthday/06.webp', 'st-w6 st-auto'], ['mym-birthday/09.webp', 'st-w6 st-auto'],
+            ['mym-birthday/07.webp', 'st-w6 st-auto'], ['mym-birthday/08.webp', 'st-w6 st-auto']
+          ]
+        },
+        {
+          eyebrow: 'App, Feed, Inbox',
+          h: 'Teaser, launch, sustain.',
+          body: '',
+          grid: [
+            ['mym-birthday/10.webp', 'st-w12 st-auto'], ['mym-birthday/11.webp', 'st-w12 st-auto'],
+            ['mym-birthday/12.webp', 'st-w6 st-auto'], ['mym-birthday/13.webp', 'st-w6 st-auto']
+          ]
+        }
+      ],
+      outcome: {
+        eyebrow: 'The Rollout',
+        h: 'Built for the app.',
+        body: [
+          'A teaser week, an 11 November launch and a sustain phase ran across home page tiles, push notifications, emailers and Meta and TikTok placements.'
+        ],
+        takeaway: 'Make the offer the invitation.'
+      }
+    },
+    roleCopy: 'I directed the birthday key visuals and adapted them across the app, CRM and paid social for the teaser, launch and sustain phases.',
+    roleTags: ['Creative Direction', 'Key Visuals', 'CRM', 'Paid Social', 'App Design']
+  },
+  'mym-deal-drop': {
+    layout: 'studio-editorial',
+    title: 'McDonald\'s MyM: Deal Drop',
+    client: 'McDonald\'s South Africa',
+    year: '2026',
+    role: 'Creative Direction · Strategy · Campaign',
+    agency: 'The Ad Hive Group',
+    tags: 'Strategy · Big Idea · App · CRM',
+    intro: 'Turning a once off Monday deal into a weekly habit on the McDonald\'s app.',
+    heroImg: 'assets/img/case/mym-deal-drop/01.webp',
+    metaDescription: 'McDonald\'s MyM Deal Drop Q1 2026 strategy and big idea by Keabetsoe Tau: Own the Week, Get Back To Happy, weekly app deals from R30.',
+    sections: [],
+    editorial: {
+      theme: { bg: '#B5121B', bg2: '#9E0F17', panel: '#C9202A', ink: '#FFF8E7', mist: '#FFD9A0', accent: '#FFC72C', accent2: '#FFFFFF', line: 'rgba(255,199,44,.35)' },
+      hero: { kicker: 'McDonald\'s South Africa · Q1 2026', titleA: 'Deal', titleB: 'Drop', tagline: 'Get back to happy. New deals loading weekly from R30.', band: 'Own the week · New deals every Monday · From R30 · Only on the McDonald\'s App ·' },
+      client: {
+        number: '01',
+        eyebrow: 'The Challenge',
+        h: 'A Monday spike, then silence.',
+        body: [
+          'Deal Drop drove a rush every Monday, then app usage dropped off. January made it harder: money is tight and fans hunt for value.'
+        ]
+      },
+      approach: {
+        number: '02',
+        eyebrow: 'The Idea',
+        h: 'Own the week.',
+        body: [
+          'Fans told us they check the app because something is always waiting. We built on that. Monday sets the deal, lunch and dinner nudges keep it alive, and the weekend closes it out. Two routes: Get Back To Happy, and If You Didn\'t Know, Now You Know.'
+        ],
+        quote: 'Januworry is real. Happy is R30 away.'
+      },
+      galleries: [
+        {
+          eyebrow: 'Key Visuals',
+          h: 'Two routes, one red world.',
+          body: '',
+          grid: [
+            ['mym-deal-drop/02.webp', 'st-w4 st-auto'], ['mym-deal-drop/03.webp', 'st-w4 st-auto'], ['mym-deal-drop/04.webp', 'st-w4 st-auto'],
+            ['mym-deal-drop/05.webp', 'st-w4 st-auto'], ['mym-deal-drop/06.webp', 'st-w4 st-auto'], ['mym-deal-drop/14.webp', 'st-w4 st-auto']
+          ]
+        },
+        {
+          eyebrow: 'Paid Media',
+          h: 'Feeding happy.',
+          body: '',
+          grid: [
+            ['mym-deal-drop/07.webp', 'st-w6 st-auto'], ['mym-deal-drop/08.webp', 'st-w6 st-auto'],
+            ['mym-deal-drop/09.webp', 'st-w6 st-auto'], ['mym-deal-drop/10.webp', 'st-w6 st-auto']
+          ]
+        },
+        {
+          eyebrow: 'In App & In Feed',
+          h: 'A deal waiting every time you open the app.',
+          body: '',
+          grid: [
+            ['mym-deal-drop/11.webp', 'st-w12 st-auto'], ['mym-deal-drop/12.webp', 'st-w12 st-auto'], ['mym-deal-drop/13.webp', 'st-w12 st-auto']
+          ]
+        }
+      ],
+      outcome: {
+        eyebrow: 'The System',
+        h: 'Weekly trigger, mealtime nudge, habit.',
+        body: [
+          'A CRM plan mapped every day of the week to a message, backed by DOOH, radio live reads, paid social, deal tiles, push notifications and emailers.'
+        ],
+        takeaway: 'Build a rhythm, not a spike.'
+      }
+    },
+    roleCopy: 'I led the strategy and big idea, the two creative routes and the rollout across DOOH, radio, paid social, the app and CRM.',
+    roleTags: ['Creative Direction', 'Strategy', 'Big Idea', 'CRM', 'App Design']
+  },
+  'mym-fifa': {
+    layout: 'studio-editorial',
+    title: 'McCrispy x FIFA World Cup 2026',
+    client: 'McDonald\'s South Africa',
+    year: '2026',
+    role: 'Creative · Post Campaign Analysis',
+    agency: 'The Ad Hive Group',
+    tags: 'App · CRM · Results',
+    intro: 'Upsize any McCrispy meal on the app for a chance to win double tickets to the World Cup Final.',
+    heroImg: 'assets/img/case/mym-fifa/01.webp',
+    metaDescription: 'McCrispy x FIFA World Cup 2026 MyM campaign and post campaign report by Keabetsoe Tau.',
+    sections: [],
+    editorial: {
+      theme: { bg: '#B5121B', bg2: '#9E0F17', panel: '#C9202A', ink: '#FFF8E7', mist: '#FFD9A0', accent: '#FFC72C', accent2: '#FFFFFF', line: 'rgba(255,199,44,.35)' },
+      hero: { kicker: 'McDonald\'s South Africa · March to April 2026', titleA: 'Kick It Up', titleB: 'A Size', tagline: '1 of 10 double tickets to the World Cup Final', band: 'Upsize & Win · McCrispy · FIFA World Cup 2026 · Only on the McDonald\'s App ·' },
+      client: {
+        number: '01',
+        eyebrow: 'The Campaign',
+        h: 'Upsize and win.',
+        body: [
+          'A four week app promotion. Upsize a McCrispy meal on the McDonald\'s app and stand a chance to win one of ten pairs of tickets to the FIFA World Cup Final.'
+        ]
+      },
+      approach: {
+        number: '02',
+        eyebrow: 'The Results',
+        h: 'R1.64 million from the app alone.',
+        body: [
+          '9,949 redemptions, R1,639,988 in sales and an average check of R161.84, with no paid media. Push notifications hit a 6.43% click rate and in app banners reached 4.7 million impressions.'
+        ],
+        quote: 'Clear message. Strong conversion. Room to go bigger.'
+      },
+      galleries: [
+        {
+          eyebrow: 'Creative',
+          h: 'Key visual to inbox.',
+          body: '',
+          grid: [
+            ['mym-fifa/02.webp', 'st-w7 st-auto'], ['mym-fifa/03.webp', 'st-w5 st-auto'],
+            ['mym-fifa/04.webp', 'st-w12 st-auto']
+          ]
+        }
+      ],
+      outcome: {
+        eyebrow: 'The Learning',
+        h: 'Clarity converts. Scale needs hype.',
+        body: [
+          'The post campaign report showed the creative converted well with core users. To reach more people it needed paid support and a bigger emotional hook than the product.'
+        ],
+        takeaway: 'Report honestly, then use it to sharpen the next brief.'
+      }
+    },
+    roleCopy: 'I worked on the creative treatment across the app, push and email, and on the post campaign report and recommendations.',
+    roleTags: ['Creative', 'CRM', 'App Design', 'Post Campaign Analysis']
+  },
+  supabets: {
+    layout: 'studio-editorial',
+    title: 'Supabets: Spina Koze Kuse',
+    client: 'Supabets',
+    year: '2026',
+    role: 'Creative Direction · Campaign Identity',
+    agency: 'Design practical task',
+    tags: 'Campaign Identity · Key Visual · Digital · OOH',
+    intro: '200 free spins and a chance to win one of three Toyota Starlets. One idea, built from master artwork to billboard.',
+    heroImg: 'assets/img/case/supabets/01.webp',
+    metaDescription: 'Supabets Spina Koze Kuse 200 free spins campaign by Keabetsoe Tau: campaign lockup, key visual, social, CRM, in app and outdoor.',
+    sections: [],
+    editorial: {
+      theme: { bg: '#0A0A0A', bg2: '#160606', panel: '#1E0808', ink: '#FFF4F0', mist: '#C9A9A3', accent: '#E3121B', accent2: '#F4C430', line: 'rgba(227,18,27,.3)' },
+      hero: { kicker: 'Supabets · Practical task · 2026', titleA: 'Spina', titleB: 'Koze Kuse', tagline: '200 free spins · A chance to win a Toyota Starlet', band: 'Spina Koze Kuse · 200 Free Spins · 1,000+ casino games · Win a Toyota Starlet ·' },
+      client: {
+        number: '01',
+        eyebrow: 'The Brief',
+        h: 'Spin until morning.',
+        body: [
+          'A six month campaign for casino and sports betting fans: 200 free spins, over 1,000 casino games and three Toyota Starlets to win.'
+        ]
+      },
+      approach: {
+        number: '02',
+        eyebrow: 'The Idea',
+        h: 'From the first spin to the final whistle.',
+        body: [
+          'Supabets red and black set the stage. Slot reels, sport and the car tie the play to the prize. A curved, dimensional lockup moves like a reel, and a gold 200 makes the offer read first.'
+        ],
+        quote: 'The reward is the hero.'
+      },
+      galleries: [
+        {
+          eyebrow: 'Identity',
+          h: 'The lockup and the world.',
+          body: '',
+          grid: [
+            ['supabets/03.webp', 'st-w5 st-auto'], ['supabets/02.webp', 'st-w7 st-auto']
+          ]
+        },
+        {
+          eyebrow: 'Digital Rollout',
+          h: 'Social, web, CRM and in app.',
+          body: '',
+          grid: [
+            ['supabets/04.webp', 'st-w4 st-auto'], ['supabets/05.webp', 'st-w4 st-auto'], ['supabets/06.webp', 'st-w4 st-auto'],
+            ['supabets/07.webp', 'st-w12 st-auto'],
+            ['supabets/09.webp', 'st-w6 st-auto'], ['supabets/10.webp', 'st-w3 st-auto'], ['supabets/08.webp', 'st-w3 st-auto']
+          ]
+        },
+        {
+          eyebrow: 'Print & Outdoor',
+          h: 'Big enough for Sandton.',
+          body: '',
+          grid: [
+            ['supabets/11.webp', 'st-w5 st-auto'], ['supabets/12.webp', 'st-w7 st-auto']
+          ]
+        }
+      ],
+      outcome: {
+        eyebrow: 'The System',
+        h: 'One master artwork, every format.',
+        body: [
+          'The key visual adapts to portrait and story social, web sliders, an emailer, in app banners, an A3 poster and a billboard without losing the offer.'
+        ],
+        takeaway: 'Lead with the reward. Let the world sell it.'
+      }
+    },
+    roleCopy: 'I created the concept, the campaign lockup, the master artwork and every adaptation across digital, print and outdoor.',
+    roleTags: ['Creative Direction', 'Campaign Identity', 'Key Visual', 'Digital Design', 'OOH']
+  }
 };
 
 /* ordered list for the work page + next-project chaining
    (biodiesel retired — ShopX leads the McDonald's-adjacent set) */
 window.CASE_ORDER = [
-  'istories', 'glenlivet', 'shopx', 'mobsie', 'ultramel',
-  'liveeasy', 'ifas', 'wpo', 'sanbi',
+  'istories', 'glenlivet', 'codigo', 'shopx', 'mobsie', 'pernod-code',
+  'mym-birthday', 'mym-deal-drop', 'supabets', 'liveeasy', 'ultramel',
+  'mym-fifa', 'ifas', 'wpo', 'sanbi',
   'pnp-school-club', 'gwf', 'nsp', 'sci-bono'
 ];
 

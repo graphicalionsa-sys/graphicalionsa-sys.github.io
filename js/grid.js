@@ -21,7 +21,13 @@
     'pnp-school-club': ['Social & content'],
     gwf: ['Social & content'],
     nsp: ['Brand identity', 'Campaigns'],
-    'sci-bono': ['Campaigns', 'Social & content']
+    'sci-bono': ['Campaigns', 'Social & content'],
+    codigo: ['Campaigns', 'Social & content'],
+    'pernod-code': ['Campaigns'],
+    'mym-birthday': ['Campaigns', 'Digital'],
+    'mym-deal-drop': ['Campaigns', 'Digital'],
+    'mym-fifa': ['Campaigns', 'Digital'],
+    supabets: ['Campaigns', 'Social & content']
   };
   /* hover previews (short clips already on the site) */
   var VID = {
@@ -33,9 +39,9 @@
   /* hero tiles: [slug, image] in three columns */
   var C = 'assets/img/case/';
   var TILES = [
-    [['istories', C + 'istories-editorial/banner-victoria.webp'], ['glenlivet', C + 'glenlivet-live/card-hero.webp'], ['mobsie', C + 'mobsie-editorial/key-visual-princess.webp'], ['sanbi', C + 'sanbi/01.webp'], ['nsp', C + 'nsp-editorial/hero-billboard.avif'], ['sci-bono', C + 'sci-bono/01.webp']],
-    [['shopx', C + 'shopx/hero-banner.webp'], ['liveeasy', C + 'liveeasy-editorial/kv-hustle.webp'], ['istories', C + 'istories-editorial/still-reggie.webp'], ['ifas', C + 'ifas/01.webp'], ['gwf', C + 'gwf/01.webp'], ['glenlivet', C + 'glenlivet-live/export-founders.webp']],
-    [['pnp-school-club', C + 'pnp-school-club/card-hero.webp'], ['wpo', C + 'wpo-editorial/reaching-farther.webp'], ['ultramel', C + 'ultramel-pitch/kv-r1.webp'], ['mobsie', C + 'mobsie-editorial/car-branding.webp'], ['liveeasy', C + 'liveeasy-editorial/hero.webp'], ['shopx', C + 'shopx/kv-b2b.webp']]
+    [['istories', C + 'istories-editorial/banner-victoria.webp'], ['glenlivet', C + 'glenlivet-live/card-hero.webp'], ['mobsie', C + 'mobsie-editorial/key-visual-princess.webp'], ['codigo', C + 'codigo/02.webp'], ['sanbi', C + 'sanbi/01.webp'], ['nsp', C + 'nsp-editorial/hero-billboard.avif'], ['sci-bono', C + 'sci-bono/01.webp']],
+    [['shopx', C + 'shopx/hero-banner.webp'], ['liveeasy', C + 'liveeasy-editorial/kv-hustle.webp'], ['istories', C + 'istories-editorial/still-reggie.webp'], ['supabets', C + 'supabets/04.webp'], ['mym-birthday', C + 'mym-birthday/03.webp'], ['ifas', C + 'ifas/01.webp'], ['gwf', C + 'gwf/01.webp'], ['glenlivet', C + 'glenlivet-live/export-founders.webp']],
+    [['pnp-school-club', C + 'pnp-school-club/card-hero.webp'], ['wpo', C + 'wpo-editorial/reaching-farther.webp'], ['pernod-code', C + 'pernod-code/11.webp'], ['mym-deal-drop', C + 'mym-deal-drop/03.webp'], ['mobsie', C + 'mobsie-editorial/car-branding.webp'], ['liveeasy', C + 'liveeasy-editorial/hero.webp'], ['shopx', C + 'shopx/kv-b2b.webp']]
   ];
 
   function shortClient(c) { return (c || '').split('·')[0].trim(); }
