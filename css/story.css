@@ -1,0 +1,67 @@
+/* ============================================================
+   KEATAU CREATIVE  -  case studies, Behance-style
+   White page, images first, copy only where it earns its place.
+   --acc is each project's own colour.
+   ============================================================ */
+body.cs-page { background: #fff; color: #141414; }
+body.cs-page #case-root { background: #fff; }
+.cs { --acc: var(--forest); --gap: clamp(8px, 1vw, 16px); --max: 1640px; padding-bottom: calc(var(--curve) + clamp(40px, 6vw, 90px)); }
+
+/* hero: the work, nothing on top of it */
+.cs-hero { position: relative; margin: var(--nav-h) 0 0; width: 100%; overflow: hidden; background: #eee; }
+.cs-hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* overview */
+.cs-intro { max-width: var(--max); margin: 0 auto; padding: clamp(56px, 8vw, 128px) var(--gutter) clamp(48px, 7vw, 110px);
+  display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(28px, 5vw, 96px); align-items: start; }
+.cs-title { font-family: var(--font-display); font-weight: 400; text-transform: uppercase; color: var(--acc);
+  font-size: clamp(48px, 6.4vw, 112px); line-height: .9; letter-spacing: 0; margin: 0; }
+.cs-line { font-size: clamp(22px, 2.15vw, 36px); line-height: 1.28; letter-spacing: -.01em; color: #141414; margin: 0; max-width: 30ch; font-weight: 500; }
+.cs-facts { grid-column: 2; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 40px; margin: 0; padding-top: 28px; border-top: 1px solid rgba(0, 0, 0, .12); }
+.cs-facts div { min-width: 0; }
+.cs-facts dt { font-size: 15px; color: #8a8a8a; margin-bottom: 4px; }
+.cs-facts dd { margin: 0; font-size: 17px; line-height: 1.4; color: #141414; font-weight: 500; }
+
+/* image rows: justified from each image's real ratio, nothing cropped */
+.cs-body { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+.cs-row { display: flex; gap: var(--gap); margin-top: var(--gap); }
+.cs-fig { position: relative; margin: 0; min-width: 0; min-height: 0; overflow: hidden; background: #f1f1f1; border-radius: 4px; }
+.cs-fig img, .cs-fig video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* breaks: short notes, one big line, numbers */
+.cs-note { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(20px, 5vw, 96px); padding: clamp(72px, 10vw, 160px) 0; }
+.cs-note h2 { font-family: var(--font-display); font-weight: 400; text-transform: uppercase; color: var(--acc); font-size: clamp(30px, 3.2vw, 52px); line-height: .95; margin: 0; }
+.cs-note p { font-size: clamp(19px, 1.6vw, 26px); line-height: 1.45; color: #2a2a2a; margin: 0; max-width: 34ch; }
+.cs-quote { margin: 0; padding: clamp(90px, 13vw, 210px) 0; text-align: center; }
+.cs-quote p { font-family: var(--font-display); text-transform: uppercase; color: var(--acc); font-size: clamp(40px, 6.6vw, 118px); line-height: .92; max-width: 15ch; margin: 0 auto; }
+.cs-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--gap); padding: clamp(72px, 10vw, 150px) 0 0; }
+.cs-stats div { border-top: 2px solid var(--acc); padding-top: 18px; }
+.cs-stats strong { display: block; font-family: var(--font-display); font-weight: 400; color: var(--acc); font-size: clamp(44px, 5.4vw, 96px); line-height: .95; }
+.cs-stats span { display: block; margin-top: 8px; font-size: 16px; color: #555; }
+.cs-stats + .cs-note { padding-top: clamp(40px, 5vw, 72px); }
+
+/* next project */
+.cs-next { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(20px, 5vw, 96px); align-items: end;
+  max-width: var(--max); margin: clamp(90px, 12vw, 190px) auto 0; padding: 0 var(--gutter); text-decoration: none; color: #141414; }
+.cs-next-copy span { display: block; font-size: 17px; color: #8a8a8a; margin-bottom: 10px; }
+.cs-next-copy strong { display: block; font-family: var(--font-display); font-weight: 400; text-transform: uppercase; font-size: clamp(40px, 5vw, 88px); line-height: .92; transition: color .3s; }
+.cs-next-img { display: block; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 4px; background: #eee; }
+.cs-next-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .8s var(--ease, ease); }
+.cs-next:hover strong { color: var(--acc); }
+.cs-next:hover img { transform: scale(1.03); }
+
+/* gentle entrance */
+.cs-in { opacity: 0; transform: translateY(28px); transition: opacity .9s ease, transform .9s cubic-bezier(.2, .7, .2, 1); }
+.cs-in.is-in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .cs-in { opacity: 1; transform: none; transition: none; } }
+
+@media (max-width: 860px) {
+  .cs-intro, .cs-note, .cs-next { grid-template-columns: minmax(0, 1fr); }
+  .cs-facts { grid-column: 1; }
+  .cs-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 32px; }
+}
+@media (max-width: 640px) {
+  .cs-row { flex-wrap: wrap; }
+  .cs-row .cs-fig:nth-last-child(n+3), .cs-row .cs-fig:nth-last-child(n+3) ~ .cs-fig { flex: 1 1 calc(50% - var(--gap)) !important; aspect-ratio: 4 / 5 !important; }
+  .cs-facts { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+}

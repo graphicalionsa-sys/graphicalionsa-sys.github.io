@@ -5,6 +5,20 @@
    ============================================================ */
 window.CASES = {
 
+  keatau: {
+    layout: 'story',
+    title: 'KEATAU Creative: Ideas With Bite',
+    client: 'KEATAU Creative',
+    year: '2026',
+    role: 'Founder · Creative Direction · Brand Identity',
+    agency: 'KEATAU Creative',
+    tags: 'Brand Identity · Campaign · Apparel · OOH',
+    intro: 'My own studio, built like a client brief.',
+    heroImg: 'assets/img/case/keatau/03.webp',
+    metaDescription: 'KEATAU Creative brand identity by Keabetsoe Tau: logo, colour, apparel, packaging, OOH and social, rooted in Pretoria and Johannesburg.',
+    sections: []
+  },
+
   istories: {
     layout: 'istories-editorial',
     title: "McDonald's iStories: Franchisee & Staff",
@@ -1668,7 +1682,7 @@ window.CASES = {
 /* ordered list for the work page + next-project chaining
    (biodiesel retired — ShopX leads the McDonald's-adjacent set) */
 window.CASE_ORDER = [
-  'istories', 'glenlivet', 'codigo', 'shopx', 'mobsie', 'pernod-code',
+  'keatau', 'istories', 'glenlivet', 'codigo', 'shopx', 'mobsie', 'pernod-code',
   'mym-birthday', 'mym-deal-drop', 'supabets', 'liveeasy', 'ultramel',
   'mym-fifa', 'ifas', 'wpo', 'sanbi',
   'pnp-school-club', 'gwf', 'nsp', 'sci-bono'
