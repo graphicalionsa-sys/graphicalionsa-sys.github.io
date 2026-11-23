@@ -695,15 +695,135 @@ window.STORIES = {
    {
     "row": [
      {
-      "src": "assets/img/case/shopx/soc-1.webp",
+      "src": "assets/img/case/shopx/d/face-1.webp",
       "ar": 0.8
      },
      {
-      "src": "assets/img/case/shopx/soc-3.webp",
+      "src": "assets/img/case/shopx/d/face-2.webp",
       "ar": 0.8
      },
      {
-      "src": "assets/img/case/shopx/soc-6.webp",
+      "src": "assets/img/case/shopx/d/face-3.webp",
+      "ar": 0.8
+     },
+     {
+      "src": "assets/img/case/shopx/d/face-4.webp",
+      "ar": 0.8
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/shopx/d/meet.webp",
+      "ar": 0.8
+     },
+     {
+      "src": "assets/img/case/shopx/d/what.webp",
+      "ar": 0.8
+     },
+     {
+      "src": "assets/img/case/shopx/d/everything.webp",
+      "ar": 0.8
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/shopx/d/why.webp",
+      "ar": 0.8
+     },
+     {
+      "src": "assets/img/case/shopx/d/sellers.webp",
+      "ar": 0.8
+     },
+     {
+      "src": "assets/img/case/shopx/d/sell.webp",
+      "ar": 0.8
+     }
+    ]
+   },
+   {
+    "t": "Launch to sell",
+    "b": "From a teaser that dared people not to look, to a feed of real sellers, real products and real offers. Every post had one job: get the app on the phone."
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/shopx/d/app-1.webp",
+      "ar": 0.4619
+     },
+     {
+      "src": "assets/img/case/shopx/d/app-2.webp",
+      "ar": 0.4619
+     },
+     {
+      "src": "assets/img/case/shopx/d/app-3.webp",
+      "ar": 0.4619
+     },
+     {
+      "src": "assets/img/case/shopx/d/app-4.webp",
+      "ar": 0.4619
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/shopx/d/app-5.webp",
+      "ar": 0.4619
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/shopx/d/payments.webp",
+      "ar": 0.8
+     },
+     {
+      "src": "assets/img/case/shopx/d/delivered.webp",
+      "ar": 0.8
+     },
+     {
+      "src": "assets/img/case/shopx/d/partners.webp",
+      "ar": 0.8
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/shopx/d/tech.webp",
+      "ar": 0.8
+     },
+     {
+      "src": "assets/img/case/shopx/d/craft.webp",
+      "ar": 0.8
+     },
+     {
+      "src": "assets/img/case/shopx/d/skincare.webp",
+      "ar": 0.8
+     },
+     {
+      "src": "assets/img/case/shopx/d/vapes.webp",
+      "ar": 0.8
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/shopx/d/rewards.webp",
+      "ar": 0.8
+     },
+     {
+      "src": "assets/img/case/shopx/d/discount.webp",
+      "ar": 0.8
+     },
+     {
+      "src": "assets/img/case/shopx/d/community.webp",
       "ar": 0.8
      }
     ]
@@ -1778,6 +1898,349 @@ window.STORIES = {
      {
       "src": "assets/img/case/mym-fifa/04.webp",
       "ar": 1.8987
+     }
+    ]
+   }
+  ]
+ },
+ "grimace": {
+  "accent": "#5B2A86",
+  "hero": "assets/img/case/grimace/01.webp",
+  "heroAr": 1.7778,
+  "name": "Grimace in Mzansi",
+  "line": "Grimace arrived in South Africa with a purple shake and no introduction needed. We made the country feel like it had been invited to his birthday.",
+  "facts": [
+   [
+    "Client",
+    "McDonald's South Africa"
+   ],
+   [
+    "Year",
+    "2024"
+   ],
+   [
+    "Role",
+    "Campaign Design, Motion, Social"
+   ],
+   [
+    "Agency",
+    "The Ad Hive Group"
+   ]
+  ],
+  "blocks": [
+   {
+    "row": [
+     {
+      "src": "assets/video/mcd/grimace-case.mp4",
+      "ar": 1.7647,
+      "video": true,
+      "poster": "assets/video/mcd/grimace-case-poster.webp"
+     }
+    ]
+   },
+   {
+    "t": "The idea",
+    "b": "Tease him before anyone sees him. A purple fur world, a coming soon that kept glitching, then Grimace turning up on escalators, ships, jacarandas and rugby fields."
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/grimace/05.webp",
+      "ar": 1.7778
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/grimace/02.webp",
+      "ar": 1.7778
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/grimace/c03.webp",
+      "ar": 1.7647
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/grimace/c05.webp",
+      "ar": 1.7647
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/grimace/04.webp",
+      "ar": 0.5625
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/grimace/c09.webp",
+      "ar": 1.7647
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/grimace/c11.webp",
+      "ar": 1.7647
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/grimace/c12.webp",
+      "ar": 1.7647
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/grimace/c14.webp",
+      "ar": 1.7647
+     }
+    ]
+   },
+   {
+    "q": "Make happy happen."
+   },
+   {
+    "row": [
+     {
+      "src": "assets/video/mcd/grimace-shake.mp4",
+      "ar": 0.5625,
+      "video": true,
+      "poster": "assets/video/mcd/grimace-shake-poster.webp"
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/grimace/c16.webp",
+      "ar": 1.7647
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/grimace/c19.webp",
+      "ar": 1.7647
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/grimace/c24.webp",
+      "ar": 1.7647
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/grimace/c26.webp",
+      "ar": 1.7647
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/grimace/c29.webp",
+      "ar": 1.7647
+     }
+    ]
+   },
+   {
+    "s": [
+     [
+      "287M",
+      "Impressions"
+     ],
+     [
+      "64.2M",
+      "Reach"
+     ],
+     [
+      "12,913",
+      "Mentions"
+     ],
+     [
+      "Best Q4",
+      "In McDonald's SA history"
+     ]
+    ]
+   },
+   {
+    "t": "The result",
+    "b": "Sales beat projection and Q4 became the best in the history of McDonald's South Africa."
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/grimace/c33.webp",
+      "ar": 1.7647
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/grimace/c34.webp",
+      "ar": 1.7647
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/video/mcd/grimace-dooh.mp4",
+      "ar": 1.7778,
+      "video": true,
+      "poster": "assets/video/mcd/grimace-dooh-poster.webp"
+     }
+    ]
+   }
+  ]
+ },
+ "appiness": {
+  "accent": "#E4572E",
+  "hero": "assets/img/case/appiness/01.webp",
+  "heroAr": 1.9108,
+  "name": "30 Days of Appiness",
+  "line": "A new deal every day for 30 days, only on the McDonald's app. A calendar you open like a gift, built to make the app a daily habit.",
+  "facts": [
+   [
+    "Client",
+    "McDonald's South Africa"
+   ],
+   [
+    "Year",
+    "2026"
+   ],
+   [
+    "Role",
+    "Campaign Design, Key Visuals, Motion"
+   ],
+   [
+    "Agency",
+    "The Ad Hive Group"
+   ]
+  ],
+  "blocks": [
+   {
+    "row": [
+     {
+      "src": "assets/img/case/appiness/02.webp",
+      "ar": 1.7778
+     }
+    ]
+   },
+   {
+    "t": "The idea",
+    "b": "30 days, 30 deals. The calendar became the hero: a fold out of daily offers that rolls straight into your MyM rewards."
+   },
+   {
+    "row": [
+     {
+      "src": "assets/video/mcd/appiness-tvc.mp4",
+      "ar": 0.5611,
+      "video": true,
+      "poster": "assets/video/mcd/appiness-tvc-poster.webp"
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/appiness/03.webp",
+      "ar": 0.5611
+     },
+     {
+      "src": "assets/img/case/appiness/04.webp",
+      "ar": 0.5611
+     },
+     {
+      "src": "assets/img/case/appiness/05.webp",
+      "ar": 0.5611
+     },
+     {
+      "src": "assets/img/case/appiness/06.webp",
+      "ar": 0.5611
+     }
+    ]
+   },
+   {
+    "q": "30 Days. 30 Deals."
+   }
+  ]
+ },
+ "afrique360": {
+  "accent": "#0E8C8C",
+  "hero": "assets/img/case/afrique360/01.webp",
+  "heroAr": 2.0707,
+  "name": "Afrique360 Solutions",
+  "line": "A brand identity for a cleaning services company that wanted to look as reliable as the work it does.",
+  "facts": [
+   [
+    "Client",
+    "Afrique360 Solutions"
+   ],
+   [
+    "Year",
+    "2024"
+   ],
+   [
+    "Role",
+    "Logo, Brand Identity"
+   ],
+   [
+    "Scope",
+    "Logo, colour, brand applications"
+   ]
+  ],
+  "blocks": [
+   {
+    "row": [
+     {
+      "src": "assets/img/case/afrique360/02.webp",
+      "ar": 3.648
+     }
+    ]
+   },
+   {
+    "t": "The mark",
+    "b": "A continent drawn in brushstrokes and wrapped in a 360 orbit. Teal for trust, orange for energy, navy for the corporate clients it serves."
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/afrique360/03.webp",
+      "ar": 1.0482
+     }
+    ]
+   },
+   {
+    "row": [
+     {
+      "src": "assets/img/case/afrique360/04.webp",
+      "ar": 1.2211
      }
     ]
    }

@@ -10,6 +10,9 @@
   /* service filter buckets (slug -> list) */
   var CAT = {
     keatau: ['Brand identity', 'Campaigns'],
+    grimace: ['Campaigns', 'Social & content'],
+    appiness: ['Campaigns', 'Digital'],
+    afrique360: ['Brand identity'],
     istories: ['Campaigns', 'Social & content'],
     glenlivet: ['Campaigns', 'Social & content'],
     shopx: ['Brand identity', 'Digital'],
@@ -40,8 +43,8 @@
   /* hero tiles: [slug, image] in three columns */
   var C = 'assets/img/case/';
   var TILES = [
-    [['istories', C + 'istories-editorial/banner-victoria.webp'], ['glenlivet', C + 'glenlivet-live/card-hero.webp'], ['mobsie', C + 'mobsie-editorial/key-visual-princess.webp'], ['codigo', C + 'codigo/02.webp'], ['sanbi', C + 'sanbi/01.webp'], ['nsp', C + 'nsp-editorial/hero-billboard.avif'], ['sci-bono', C + 'sci-bono/01.webp']],
-    [['keatau', C + 'keatau/03.webp'], ['shopx', C + 'shopx/hero-banner.webp'], ['liveeasy', C + 'liveeasy-editorial/kv-hustle.webp'], ['istories', C + 'istories-editorial/still-reggie.webp'], ['supabets', C + 'supabets/04.webp'], ['mym-birthday', C + 'mym-birthday/03.webp'], ['ifas', C + 'ifas/01.webp'], ['gwf', C + 'gwf/01.webp'], ['glenlivet', C + 'glenlivet-live/export-founders.webp']],
+    [['istories', C + 'istories-editorial/banner-victoria.webp'], ['glenlivet', C + 'glenlivet-live/card-hero.webp'], ['mobsie', C + 'mobsie-editorial/key-visual-princess.webp'], ['codigo', C + 'codigo/02.webp'], ['grimace', C + 'grimace/01.webp'], ['sanbi', C + 'sanbi/01.webp'], ['nsp', C + 'nsp-editorial/hero-billboard.avif'], ['sci-bono', C + 'sci-bono/01.webp']],
+    [['keatau', C + 'keatau/03.webp'], ['shopx', C + 'shopx/hero-banner.webp'], ['liveeasy', C + 'liveeasy-editorial/kv-hustle.webp'], ['istories', C + 'istories-editorial/still-reggie.webp'], ['supabets', C + 'supabets/04.webp'], ['appiness', C + 'appiness/01.webp'], ['mym-birthday', C + 'mym-birthday/03.webp'], ['ifas', C + 'ifas/01.webp'], ['gwf', C + 'gwf/01.webp'], ['glenlivet', C + 'glenlivet-live/export-founders.webp']],
     [['pnp-school-club', C + 'pnp-school-club/card-hero.webp'], ['wpo', C + 'wpo-editorial/reaching-farther.webp'], ['keatau', C + 'keatau/14.webp'], ['pernod-code', C + 'pernod-code/11.webp'], ['mym-deal-drop', C + 'mym-deal-drop/03.webp'], ['mobsie', C + 'mobsie-editorial/car-branding.webp'], ['liveeasy', C + 'liveeasy-editorial/hero.webp'], ['shopx', C + 'shopx/kv-b2b.webp']]
   ];
 

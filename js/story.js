@@ -22,8 +22,10 @@
   var md = document.querySelector('meta[name="description"]');
   if (md) md.setAttribute('content', meta.metaDescription || d.line);
 
-  function media(it, eager) {
-    var style = 'flex:' + it.ar + ' 1 0;aspect-ratio:' + it.ar;
+  function media(it, eager, solo) {
+    /* a lone portrait piece is capped to the screen height and centred */
+    var style = solo ? 'flex:0 1 auto;width:min(100%, calc(86svh * ' + it.ar + '));aspect-ratio:' + it.ar
+                     : 'flex:' + it.ar + ' 1 0;aspect-ratio:' + it.ar;
     if (it.video) {
       return '<figure class="cs-fig" style="' + style + '"><video muted loop playsinline preload="none"' +
         (it.poster ? ' poster="' + esc(it.poster) + '"' : '') + ' data-src="' + esc(it.src) + '"></video></figure>';
@@ -32,7 +34,10 @@
   }
 
   var body = d.blocks.map(function (b, i) {
-    if (b.row) return '<div class="cs-row cs-in">' + b.row.map(function (it) { return media(it, i < 1); }).join('') + '</div>';
+    if (b.row) {
+      var solo = b.row.length === 1 && b.row[0].ar < 1.3;
+      return '<div class="cs-row cs-in"' + (solo ? ' style="justify-content:center"' : '') + '>' + b.row.map(function (it) { return media(it, i < 1, solo); }).join('') + '</div>';
+    }
     if (b.t) return '<section class="cs-note cs-in"><h2>' + esc(b.t) + '</h2><p>' + esc(b.b) + '</p></section>';
     if (b.q) return '<blockquote class="cs-quote cs-in"><p>' + esc(b.q) + '</p></blockquote>';
     if (b.s) return '<div class="cs-stats cs-in">' + b.s.map(function (x) { return '<div><strong>' + esc(x[0]) + '</strong><span>' + esc(x[1]) + '</span></div>'; }).join('') + '</div>';

@@ -5,6 +5,48 @@
    ============================================================ */
 window.CASES = {
 
+  grimace: {
+    layout: 'story',
+    title: "McDonald's: Grimace in Mzansi",
+    client: "McDonald's South Africa",
+    year: '2024',
+    role: 'Campaign Design · Motion · Social',
+    agency: 'The Ad Hive Group',
+    tags: 'Campaign · Social · Motion · DOOH',
+    intro: 'Grimace arrives in South Africa.',
+    heroImg: 'assets/img/case/grimace/01.webp',
+    metaDescription: "Grimace in Mzansi for McDonald's South Africa: teaser, social, motion and DOOH. 287M impressions and the best Q4 in McDonald's SA history.",
+    sections: []
+  },
+
+  appiness: {
+    layout: 'story',
+    title: "McDonald's: 30 Days of Appiness",
+    client: "McDonald's South Africa",
+    year: '2026',
+    role: 'Campaign Design · Key Visuals · Motion',
+    agency: 'The Ad Hive Group',
+    tags: 'Campaign · App · Motion',
+    intro: "30 days, 30 deals on the McDonald's app.",
+    heroImg: 'assets/img/case/appiness/01.webp',
+    metaDescription: "30 Days of Appiness for McDonald's South Africa: a daily deal calendar on the MyM app.",
+    sections: []
+  },
+
+  afrique360: {
+    layout: 'story',
+    title: 'Afrique360 Solutions: Brand Identity',
+    client: 'Afrique360 Solutions',
+    year: '2024',
+    role: 'Logo · Brand Identity',
+    agency: 'Graphicalion',
+    tags: 'Brand Identity · Logo',
+    intro: 'A brand identity for a cleaning services company.',
+    heroImg: 'assets/img/case/afrique360/01.webp',
+    metaDescription: 'Afrique360 Solutions logo and brand identity by Keabetsoe Tau.',
+    sections: []
+  },
+
   keatau: {
     layout: 'story',
     title: 'KEATAU Creative: Ideas With Bite',
@@ -1682,9 +1724,9 @@ window.CASES = {
 /* ordered list for the work page + next-project chaining
    (biodiesel retired — ShopX leads the McDonald's-adjacent set) */
 window.CASE_ORDER = [
-  'keatau', 'istories', 'glenlivet', 'codigo', 'shopx', 'mobsie', 'pernod-code',
-  'mym-birthday', 'mym-deal-drop', 'supabets', 'liveeasy', 'ultramel',
-  'mym-fifa', 'ifas', 'wpo', 'sanbi',
+  'keatau', 'istories', 'grimace', 'glenlivet', 'codigo', 'shopx', 'mobsie',
+  'pernod-code', 'appiness', 'mym-birthday', 'mym-deal-drop', 'supabets',
+  'liveeasy', 'ultramel', 'mym-fifa', 'afrique360', 'ifas', 'wpo', 'sanbi',
   'pnp-school-club', 'gwf', 'nsp', 'sci-bono'
 ];
 
