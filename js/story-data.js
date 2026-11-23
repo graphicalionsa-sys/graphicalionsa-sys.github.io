@@ -17,7 +17,7 @@ window.STORIES = {
    ],
    [
     "Role",
-    "Founder, Creative Director, Designer"
+    "Founder, Design Director, Designer"
    ],
    [
     "Scope",
