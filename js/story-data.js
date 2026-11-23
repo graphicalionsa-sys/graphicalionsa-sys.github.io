@@ -2179,10 +2179,6 @@ window.STORIES = {
      {
       "src": "assets/img/case/appiness/05.webp",
       "ar": 0.5611
-     },
-     {
-      "src": "assets/img/case/appiness/06.webp",
-      "ar": 0.5611
      }
     ]
    },
