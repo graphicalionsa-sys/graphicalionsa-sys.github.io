@@ -70,6 +70,7 @@ body::after { display: none; }
 .k-lede b, .k-lede strong { color: var(--cream); font-weight: 600; }
 .k-accent { color: var(--chart); }
 .k-wrap { max-width: 1480px; margin: 0 auto; }
+.k-wrap--narrow { max-width: 1160px; }   /* case-study grid: more air at the sides */
 
 /* ---------- sections + colour transitions ----------
    Each section sits on the previous one with a soft curved top,
@@ -161,8 +162,8 @@ main > .k-sec:first-child, main > .k-hero + * { margin-top: 0; }
 .k-logos-grid img:hover { opacity: 1; }
 
 /* ---------- SHOWREEL (full bleed) ---------- */
-.k-reel { background: var(--forest); padding: clamp(24px, 4vw, 64px) 0 0; overflow: hidden; }
-.k-reel-frame { position: relative; width: 100%; aspect-ratio: 16 / 9; background: var(--forest-2); cursor: pointer; }
+.k-reel { background: transparent; padding: 0; overflow: hidden; }
+.k-reel-frame { position: relative; width: 100%; aspect-ratio: 16 / 9; background: transparent; cursor: pointer; }
 .k-reel-frame video, .k-reel-frame img.k-reel-poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .k-reel-frame img.k-reel-poster { transition: opacity .6s; }
 .k-reel-frame.is-playing img.k-reel-poster { opacity: 0; pointer-events: none; }
@@ -179,13 +180,18 @@ main > .k-sec:first-child, main > .k-hero + * { margin-top: 0; }
 
 /* ---------- WORK GRID ---------- */
 .k-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(24px, 3vw, 48px) clamp(18px, 2.4vw, 32px); }
-.k-card { text-decoration: none; color: inherit; display: block; }
-.k-card-media { display: block; position: relative; aspect-ratio: 16 / 11; border-radius: var(--radius); overflow: hidden; background: var(--forest-2); }
+.k-card { text-decoration: none; color: inherit; display: block; transition: transform .5s var(--ease); }
+.k-card-media { display: block; position: relative; aspect-ratio: 16 / 10; border-radius: var(--radius); overflow: hidden; background: var(--cream-2); transition: box-shadow .45s var(--ease); }
+/* hover highlight — the pre-rebrand behaviour: media sits dimmed, lights up on hover */
+.k-card-media::after { content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: 1; background: var(--cream); opacity: .20; transition: opacity .45s var(--ease); }
 .k-card-media img, .k-card-media video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--ease); }
 .k-card-media video { opacity: 0; transition: opacity .4s; }
-.k-card:hover .k-card-media img { transform: scale(1.04); }
+.k-card:hover { transform: translateY(-6px); }
+.k-card:hover .k-card-media { box-shadow: 0 22px 44px -22px rgba(11, 43, 32, .45); }
+.k-card:hover .k-card-media::after { opacity: 0; }
+.k-card:hover .k-card-media img, .k-card:hover .k-card-media video { transform: scale(1.03); }
 .k-card:hover .k-card-media video { opacity: 1; }
-.k-card-arrow { position: absolute; right: 16px; top: 16px; width: 44px; height: 44px; border-radius: 50%; background: var(--chart); color: var(--forest); display: grid; place-items: center; transform: translateY(-8px); opacity: 0; transition: all .4s var(--ease); }
+.k-card-arrow { z-index: 2; position: absolute; right: 16px; top: 16px; width: 44px; height: 44px; border-radius: 50%; background: var(--chart); color: var(--forest); display: grid; place-items: center; transform: translateY(-8px); opacity: 0; transition: all .4s var(--ease); }
 .k-card:hover .k-card-arrow { opacity: 1; transform: none; }
 .k-card-arrow svg { width: 18px; height: 18px; }
 .k-card-body { padding: 16px 2px 0; display: flex; justify-content: space-between; align-items: baseline; gap: 18px; }
@@ -195,7 +201,9 @@ main > .k-sec:first-child, main > .k-hero + * { margin-top: 0; }
 .k-card--wide { grid-column: 1 / -1; }
 .k-card--wide .k-card-media { aspect-ratio: 21 / 9; }
 .k-card--wide .k-card-title { font-size: clamp(32px, 3.4vw, 52px); }
-@media (max-width: 760px) { .k-grid { grid-template-columns: 1fr; } .k-card--wide .k-card-media { aspect-ratio: 16 / 11; } .k-card-body { flex-direction: column; gap: 6px; } .k-card-tags { text-align: left; white-space: normal; } }
+/* no hover on touch — never leave the cards sitting dimmed */
+@media (hover: none) { .k-card-media::after { opacity: 0; } }
+@media (max-width: 760px) { .k-grid { grid-template-columns: 1fr; } .k-card--wide .k-card-media { aspect-ratio: 16 / 10; } .k-card-body { flex-direction: column; gap: 6px; } .k-card-tags { text-align: left; white-space: normal; } }
 
 /* filters */
 .k-filters { display: flex; gap: 10px; flex-wrap: wrap; }

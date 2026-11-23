@@ -37,7 +37,7 @@
   var VID = {
     istories: 'assets/video/istories/vid-reggie-hero.mp4',
     shopx: 'assets/video/shopx/store.mp4',
-    glenlivet: 'assets/video/glenlivet-preview.m4v',
+    glenlivet: 'assets/video/glenlivet-preview.mp4',
     liveeasy: 'assets/video/liveeasy/website-revamp.mp4'
   };
   /* hero tiles: [slug, image] in three columns */

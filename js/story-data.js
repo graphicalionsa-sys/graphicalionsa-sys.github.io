@@ -209,7 +209,8 @@ window.STORIES = {
       "src": "assets/video/istories/vid-reggie-hero.mp4",
       "ar": 1.7778,
       "video": true,
-      "poster": "assets/video/istories/vid-reggie-hero-poster.webp"
+      "poster": "assets/video/istories/vid-reggie-hero-poster.webp",
+      "play": false
      }
     ]
    },
@@ -281,7 +282,7 @@ window.STORIES = {
  "glenlivet": {
   "accent": "#9A6A2F",
   "hero": "assets/img/case/glenlivet-live/card-hero.webp",
-  "heroAr": 1.7778,
+  "heroAr": 1.8972,
   "name": "The Glenlivet",
   "line": "Live Original repositioned The Glenlivet as the whisky for people who choose their own path, then proved it through Mercedes Benz, a family of cultural Originals and a live experience.",
   "facts": [
@@ -322,10 +323,25 @@ window.STORIES = {
    {
     "row": [
      {
-      "src": "assets/video/glenlivet-live/merc-arrival.mp4",
+      "src": "assets/video/glenlivet-live/merc-film-a.mp4",
       "ar": 0.8,
       "video": true,
-      "poster": "assets/video/glenlivet-live/merc-arrival-poster.webp"
+      "poster": "assets/video/glenlivet-live/merc-film-a-poster.webp",
+      "play": true
+     },
+     {
+      "src": "assets/video/glenlivet-live/merc-reveal.mp4",
+      "ar": 0.8,
+      "video": true,
+      "poster": "assets/video/glenlivet-live/merc-reveal-poster.webp",
+      "play": true
+     },
+     {
+      "src": "assets/video/glenlivet-live/merc-film-b.mp4",
+      "ar": 0.8,
+      "video": true,
+      "poster": "assets/video/glenlivet-live/merc-film-b-poster.webp",
+      "play": true
      }
     ]
    },
@@ -357,18 +373,69 @@ window.STORIES = {
     "q": "Some people attend. Originals arrive."
    },
    {
+    "t": "The Originals",
+    "b": "Three people who already live the platform. Tap a portrait to see their posts."
+   },
+   {
+    "orig": [
+     {
+      "slug": "dineo",
+      "name": "Dineo Moeketsi",
+      "role": "Fearless self expression",
+      "img": "assets/img/case/glenlivet-live/influencer-dineo.webp",
+      "videos": [
+       "assets/video/glenlivet-live/dineo-1",
+       "assets/video/glenlivet-live/dineo-2",
+       "assets/video/glenlivet-live/dineo-3",
+       "assets/video/glenlivet-live/dineo-4"
+      ],
+      "ar": 0.7997
+     },
+     {
+      "slug": "jay",
+      "name": "J Something",
+      "role": "Music and culinary craft",
+      "img": "assets/img/case/glenlivet-live/influencer-jay.webp",
+      "videos": [
+       "assets/video/glenlivet-live/jay-1",
+       "assets/video/glenlivet-live/jay-2",
+       "assets/video/glenlivet-live/jay-3",
+       "assets/video/glenlivet-live/jay-4",
+       "assets/video/glenlivet-live/jay-5"
+      ],
+      "ar": 0.7997
+     },
+     {
+      "slug": "thembi",
+      "name": "Thembinkosi Mthembu",
+      "role": "Authenticity and storytelling",
+      "img": "assets/img/case/glenlivet-live/influencer-thembi.webp",
+      "videos": [
+       "assets/video/glenlivet-live/thembi-1",
+       "assets/video/glenlivet-live/thembi-2",
+       "assets/video/glenlivet-live/thembi-3",
+       "assets/video/glenlivet-live/thembi-4",
+       "assets/video/glenlivet-live/thembi-5"
+      ],
+      "ar": 0.7997
+     }
+    ]
+   },
+   {
     "row": [
      {
-      "src": "assets/img/case/glenlivet-live/influencer-dineo.webp",
-      "ar": 0.7997
+      "src": "assets/video/glenlivet-live/influencer-recap.mp4",
+      "ar": 0.8,
+      "video": true,
+      "poster": "assets/video/glenlivet-live/influencer-recap-poster.webp",
+      "play": true
      },
      {
-      "src": "assets/img/case/glenlivet-live/influencer-jay.webp",
-      "ar": 0.7997
-     },
-     {
-      "src": "assets/img/case/glenlivet-live/influencer-thembi.webp",
-      "ar": 0.7997
+      "src": "assets/video/glenlivet-live/sinn.mp4",
+      "ar": 0.8,
+      "video": true,
+      "poster": "assets/video/glenlivet-live/sinn-poster.webp",
+      "play": true
      }
     ]
    },
@@ -428,7 +495,11 @@ window.STORIES = {
      }
     ]
    }
-  ]
+  ],
+  "heroVideo": "assets/video/glenlivet-live/hero-loop.mp4",
+  "heroPoster": "assets/video/glenlivet-live/hero-loop-poster.webp",
+  "film": "assets/video/glenlivet-live/launch-film.mp4",
+  "filmPoster": "assets/video/glenlivet-live/launch-film-poster.webp"
  },
  "codigo": {
   "accent": "#B5652B",
@@ -862,7 +933,8 @@ window.STORIES = {
       "src": "assets/video/shopx/corporate.mp4",
       "ar": 1.7777777777777777,
       "video": true,
-      "poster": null
+      "poster": null,
+      "play": false
      }
     ]
    },
@@ -1806,7 +1878,8 @@ window.STORIES = {
       "src": "assets/video/studio/ultramel-kv.mp4",
       "ar": 1.7817,
       "video": true,
-      "poster": "assets/video/studio/ultramel-kv-poster.webp"
+      "poster": "assets/video/studio/ultramel-kv-poster.webp",
+      "play": false
      }
     ]
    },
@@ -1934,7 +2007,8 @@ window.STORIES = {
       "src": "assets/video/mcd/grimace-case.mp4",
       "ar": 1.7647,
       "video": true,
-      "poster": "assets/video/mcd/grimace-case-poster.webp"
+      "poster": "assets/video/mcd/grimace-case-poster.webp",
+      "play": false
      }
     ]
    },
@@ -2023,7 +2097,8 @@ window.STORIES = {
       "src": "assets/video/mcd/grimace-shake.mp4",
       "ar": 0.5625,
       "video": true,
-      "poster": "assets/video/mcd/grimace-shake-poster.webp"
+      "poster": "assets/video/mcd/grimace-shake-poster.webp",
+      "play": false
      }
     ]
    },
@@ -2113,7 +2188,8 @@ window.STORIES = {
       "src": "assets/video/mcd/grimace-dooh.mp4",
       "ar": 1.7778,
       "video": true,
-      "poster": "assets/video/mcd/grimace-dooh-poster.webp"
+      "poster": "assets/video/mcd/grimace-dooh-poster.webp",
+      "play": false
      }
     ]
    }
@@ -2162,7 +2238,8 @@ window.STORIES = {
       "src": "assets/video/mcd/appiness-tvc.mp4",
       "ar": 0.5611,
       "video": true,
-      "poster": "assets/video/mcd/appiness-tvc-poster.webp"
+      "poster": "assets/video/mcd/appiness-tvc-poster.webp",
+      "play": false
      }
     ]
    },
@@ -2289,7 +2366,8 @@ window.STORIES = {
       "src": "assets/video/studio/ifas-1.mp4",
       "ar": 0.9988,
       "video": true,
-      "poster": "assets/video/studio/ifas-1-poster.webp"
+      "poster": "assets/video/studio/ifas-1-poster.webp",
+      "play": false
      }
     ]
    },
@@ -2393,7 +2471,8 @@ window.STORIES = {
       "src": "assets/img/case/wpo-editorial/wpo-motion.mp4",
       "ar": 1.7777777777777777,
       "video": true,
-      "poster": null
+      "poster": null,
+      "play": false
      }
     ]
    },
@@ -2552,7 +2631,8 @@ window.STORIES = {
       "src": "assets/video/studio/pnp-1.mp4",
       "ar": 1.7817,
       "video": true,
-      "poster": "assets/video/studio/pnp-1-poster.webp"
+      "poster": "assets/video/studio/pnp-1-poster.webp",
+      "play": false
      }
     ]
    },
@@ -2624,7 +2704,8 @@ window.STORIES = {
       "src": "assets/video/studio/gwf-1.mp4",
       "ar": 0.9988,
       "video": true,
-      "poster": "assets/video/studio/gwf-1-poster.webp"
+      "poster": "assets/video/studio/gwf-1-poster.webp",
+      "play": false
      }
     ]
    },

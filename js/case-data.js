@@ -188,7 +188,7 @@ window.CASES = {
     tags: 'Brand Platform · Integrated Campaign · Influencer Marketing',
     intro: 'One platform, many chapters. Live Original repositioned The Glenlivet as the whisky for people who choose their own path, then proved it through a Mercedes Benz partnership, a family of cultural Originals and an experience that brought the idea home.',
     heroImg: 'assets/img/case/glenlivet-live/card-hero.webp',
-    video: 'assets/video/glenlivet-preview.m4v',
+    video: 'assets/video/glenlivet-preview.mp4',
     metaDescription: 'The Glenlivet Live Original case study by Keabetsoe Tau. A brand platform, the Mercedes Benz giveaway campaign, The Glenlivet Originals influencer programme and the Driven by Originality launch experience.',
     editorial: {
       overview: {
